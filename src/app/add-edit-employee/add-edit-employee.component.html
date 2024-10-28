@@ -1,0 +1,80 @@
+
+<div mat-dialog-title>Employee Form</div>
+
+
+<div mat-dialog-content>
+    
+<form [formGroup]="myfrm" (ngSubmit)="OnSubmit()">
+   
+    <mat-form-field>
+       Id<input matInput formControlName="id">
+       <div *ngIf="myfrm.controls['id'].invalid  && (myfrm.controls['id'].touched || myfrm.controls['id'].dirty)">
+        <span *ngIf="myfrm.controls['id'].errors?.['required']">
+       This is required
+        </span>
+
+        </div>
+                   </mat-form-field>
+           
+    
+               <mat-form-field>
+                Name<input matInput formControlName="name">
+                <div *ngIf="myfrm.controls['username'].invalid  && (myfrm.controls['username'].touched || myfrm.controls['username'].dirty)">
+                    <span *ngIf="myfrm.controls['username'].errors?.['required']">
+                   This is required
+                    </span>
+
+                    </div>
+                                 </mat-form-field>
+
+
+                                 
+                                 <mat-form-field>
+                                    UserName<input matInput formControlName="username">
+                                                    
+
+                                    <div *ngIf="myfrm.controls['username'].invalid  && (myfrm.controls['username'].touched || myfrm.controls['username'].dirty)">
+                                                        <span *ngIf="myfrm.controls['username'].errors?.['required']">
+                                                       This is required
+                                                        </span>
+
+                                                        </div>
+                                                     
+                                                    </mat-form-field>
+
+                                                     
+                                                     <mat-form-field>
+                                                      Email<input matInput formControlName="email">
+
+                                                      <div *ngIf="myfrm.controls['email'].invalid  && (myfrm.controls['email'].touched || myfrm.controls['email'].dirty)">
+                                                        <span *ngIf="myfrm.controls['email'].errors?.['required']">
+                                                       This is required
+                                                        </span>
+                                                        <span *ngIf="myfrm.controls['email'].errors?.['email']">
+                                                            The email is invalid
+                                                             </span>
+
+                                                        </div>
+                                                                      </mat-form-field>
+                                                                      
+
+                               
+                                          
+                                                    <div mat-dialog-actions>
+                                                        
+                                                        <button  type="submit"  class="btn btn-primary">{{data?"Edit":"Save"}}</button>
+                                                                                      
+                                                                                    
+                                                        <button mat-button color="warn" [mat-dialog-close]="false">Cancel</button>         
+                                                        
+                                                  </div>      
+                                              
+                     
+                      </form>
+</div>
+
+                    
+
+
+
+                    
