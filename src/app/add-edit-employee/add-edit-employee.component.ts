@@ -61,11 +61,13 @@ if(this.myfrm.valid)
   if(this.data)
   {
 
+    
     this._myservice.editdeveloperData(this.data.id,this.myfrm.value).subscribe(
 
       {
         next:(data:any)=>
         {
+          console.log(data);
           alert("data updated successfully");
           this._mydialogRef.close(true);
       

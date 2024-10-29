@@ -25,7 +25,7 @@ export class AppComponent implements OnInit{
   user:users[]=[];
  
 
-  //developer: any[]=[
+  //users: any[]=[
    // {
     //"Id":1,
     //"FirstName":"Saujanya",

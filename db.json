@@ -8,9 +8,15 @@
     },
     {
       "id": "2",
-      "name": "Srivastav",
+      "name": "Srivastava",
       "username": "Saujanya",
       "email": "sri@yahoo.com"
+    },
+    {
+      "id": "3",
+      "name": "SriSri",
+      "username": "Sauj",
+      "email": "sauj@gmail.com"
     }
   ]
 }
