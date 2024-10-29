@@ -31,7 +31,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 I have implemented json server for creating db.json mock file for crud operations
 
   //using json server and file is db.json 
-  url="http://localhost:3000/developer";
+  url="http://localhost:3000/users";
   we have to run command
   >json-server --watch db.json
    to run js0n server
@@ -53,7 +53,7 @@ Also taken mock API Since some time JSON SERVER is down
   step 3.>npm install bootstrap(To install bootstrap)
   and it has to be added into angular.json file from node_modules folder
 
-  step 4.>npm install json server (installing jdson server )
+  step 4.>npm install json-server (installing json server )
 
 
 

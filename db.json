@@ -1,17 +1,16 @@
 {
   "users": [
     {
-    "id":1,
-    "name":"Saujanya",
-    "username":"Srivastava",
-    "email":"s_vastav2000@yahoo.com"
+      "id": "1",
+      "name": "Saujanya",
+      "username": "Srivastava",
+      "email": "s_vastav2000@yahoo.com"
     },
     {
-      "id":2,
-      "name":"Sri",
-      "username":"Sauj",
-      "email":"sri@yahoo.com"
-      }
-   
+      "id": "2",
+      "name": "Srivastav",
+      "username": "Saujanya",
+      "email": "sri@yahoo.com"
+    }
   ]
 }
