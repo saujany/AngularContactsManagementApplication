@@ -10,7 +10,7 @@ export class EmployeeService {
   constructor(private _httpclient:HttpClient) { }
 
   //using json server and file is db.json 
-  url="http://localhost:3000/developer";
+  url="http://localhost:3000/users";
  
 
   //mock API
@@ -19,28 +19,28 @@ export class EmployeeService {
   
   postdeveloperData(data:any):Observable<any>
   {
-    return this._httpclient.post(this.url3,data);
+    return this._httpclient.post(this.url,data);
   }
 
   getdeveloperData():Observable<any>
   {
     
 
-    return this._httpclient.get(this.url3);
+    return this._httpclient.get(this.url);
     
 
   }
 
   deletedeveloperData(id:number):Observable<any>
   {
-    return this._httpclient.delete(`${this.url3}/${id}`);
+    return this._httpclient.delete(`${this.url}/${id}`);
 
   }
 
   editdeveloperData(id:number,data:any):Observable<any>
   {
     console.log(data);
-    return this._httpclient.put(`${this.url3}/${id}`,data);
+    return this._httpclient.put(`${this.url}/${id}`,data);
 
   }
 
