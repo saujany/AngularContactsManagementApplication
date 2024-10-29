@@ -72,13 +72,29 @@ this.getData();
         }
 
 
-        EditData(data:any)
+       EditData(data:any)
         {
-          this._dialogref.open(AddEditEmployeeComponent,
+          const dialogref=this._dialogref.open(AddEditEmployeeComponent,
           {
             data,
           });
           
+        
+          dialogref.afterClosed().subscribe(
+            {
+              next:(val)=>
+              {
+                if(val)
+                {
+                  this.getData();
+                }
+              },
+              error:(error:any)=>
+                {
+                  alert("some error")
+                }
+            }
+          )
         }
       
 
